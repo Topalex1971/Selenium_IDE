@@ -1,0 +1,178 @@
+{
+  "id": "7f23741f-c47d-4510-8921-4603f11d2585",
+  "version": "2.0",
+  "name": "Oleksandr Topolnytskiy",
+  "url": "https://www.oleksandr.top",
+  "tests": [{
+    "id": "70e7c235-6b3a-4897-b7e5-9e8bbb2530c6",
+    "name": "Redirect to Education section",
+    "commands": [{
+      "id": "e49abc4a-69ad-4301-b098-92864380344e",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dce0a001-c4d2-483c-b639-3c3e758f2c88",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1002x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b34edab6-2254-4b5d-b813-be62595aa346",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=nav li:nth-child(3) > a",
+      "targets": [],
+      "value": "EDUCATION"
+    }]
+  }, {
+    "id": "fa71491e-b6e1-48de-b2e5-4e7951b34622",
+    "name": "Redirect to Education and Assessment sections",
+    "commands": [{
+      "id": "b5b01ee4-3776-4f0d-a971-65a93800d4ff",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e013a8c-d0d8-4153-95b0-32c6e9901f53",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1002x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ded93bd-8f97-4e34-a8bb-979674643936",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=nav li:nth-child(3) > a",
+      "targets": [],
+      "value": "EDUCATION"
+    }, {
+      "id": "5662e2e3-8e42-4e39-8fdf-87d5ee213e16",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > a",
+      "targets": [
+        ["css=li:nth-child(5) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Assesment my CV')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#asses-block')]", "xpath:href"],
+        ["xpath=//li[5]/a", "xpath:position"]
+      ],
+      "value": "ASSESSMENT MY CV"
+    }]
+  }, {
+    "id": "1d83a52b-01a6-419d-b990-64dd49d1c8cc",
+    "name": "Redirect to Main menu",
+    "commands": [{
+      "id": "3d745207-71f5-45c1-9b27-0a7890caa61f",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b9262f-224a-4534-bb67-c7b10240596b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1005x824",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eedf7163-c120-4fcc-a94a-6a423449b939",
+      "comment": "",
+      "command": "click",
+      "target": "css=nav li:nth-child(2) > a",
+      "targets": [
+        ["css=nav li:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Skills')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#skills-block')]", "xpath:href"],
+        ["xpath=//li[2]/a", "xpath:position"]
+      ],
+      "value": "SOFT SKILLS"
+    }, {
+      "id": "9a904fac-6bbb-4cf1-8f19-05c0e76df0aa",
+      "comment": "",
+      "command": "click",
+      "target": "css=nav li:nth-child(3) > a",
+      "targets": [
+        ["css=nav li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Education')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#edu-block')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"]
+      ],
+      "value": "EDUCATION"
+    }, {
+      "id": "19f825c5-158a-449f-9253-5a45b7bc27d6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropbtn",
+      "targets": [
+        ["css=.dropbtn", "css:finder"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": "WORK EXPERIENCE (WE)"
+    }, {
+      "id": "b64af608-dfdf-44cd-87ca-a5ab69e039b0",
+      "comment": "",
+      "command": "click",
+      "target": "id=weutest",
+      "targets": [
+        ["linkText=WE | MANAGEMENT", "linkText"],
+        ["css=.dropdown-content > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'WE | MANAGEMENT')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#wemanage')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'WE | MANAGEMENT')]", "xpath:innerText"]
+      ],
+      "value": "WE | UTEST | QA"
+    }, {
+      "id": "42ec411f-bc16-4ea2-8131-139f130512e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=weprog",
+      "targets": [
+        ["linkText=WE | PROGRAMMING | QA", "linkText"],
+        ["css=.dropdown-content > a:nth-child(2)", "css:finder"],
+        ["xpath=//a[contains(text(),'WE | PROGRAMMING | QA')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '#weprog')]", "xpath:href"],
+        ["xpath=//a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'WE | PROGRAMMING | QA')]", "xpath:innerText"]
+      ],
+      "value": "WE | PROGRAMMING | QA"
+    }, {
+      "id": "8ec14671-4630-4cff-8a17-787585a78b83",
+      "comment": "",
+      "command": "click",
+      "target": "id=wemanage",
+      "targets": [
+        ["id=wemanage", "id"],
+        ["css=#wemanage", "css:finder"],
+        ["xpath=//div[@id='wemanage']", "xpath:attributes"],
+        ["xpath=//body/div[4]", "xpath:position"]
+      ],
+      "value": "WE | MANAGEMENT"
+    }, {
+      "id": "839bd549-9dea-4fa4-82eb-49e3a1212990",
+      "comment": "",
+      "command": "click",
+      "target": "css=li:nth-child(5) > a",
+      "targets": [],
+      "value": "ASSESSMENT MY CV"
+    }]
+  }],
+  "suites": [{
+    "id": "eaad5d42-614f-4d48-a45f-486874664d92",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["70e7c235-6b3a-4897-b7e5-9e8bbb2530c6"]
+  }],
+  "urls": ["https://www.oleksandr.top/"],
+  "plugins": []
+}
